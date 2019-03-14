@@ -1,10 +1,17 @@
 import React, {Component} from "react";
 
 class Counter extends Component {
-    state = {
-        value: this.props.value,
-        tags: ['tag1', 'tag2', 'tag3']
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: this.props.value
+        }
+    }
+
+    // state = {
+    //     value: this.props.value,
+    //     tags: ['tag1', 'tag2', 'tag3']
+    // };
 
     // constructor() {
     //     super();
